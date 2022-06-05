@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+body[data-amagd="Body"] {
+    background-color: #e91e63;
+    background-image: url("home-web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    margin-top: 10px;
+}
+
+form div label {
+    margin-bottom: 5px;
+}
+
+form div input {
+    direction: rtl;
+    padding: 5px 10px;
+    outline: 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 100% !important;
+}
+
+form div select {
+    direction: rtl;
+    padding: 5px 10px;
+    outline: 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    width: 100% !important;
+}
+
+form input[type="button"] {
+    margin: 15px 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: #06b260;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover {
+    animation: Button .4s linear forwards;
+}
+
+@keyframes Button {
+    0% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(.9) rotate(10deg);
+    }
+    100% {
+        transform: scale(1) rotate(0);
+    }
+}
+
+body[data-Body="Body"] header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #c1bdb9;
+    color: #fff;
+    flex-direction: row-reverse;
+}
+
+body[data-Body="Body"] header img {
+    width: 50px;
+    height: 50px;
+}
+
+body[data-Body="Body"] header h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+body[data-Body="Body"] header h1 span {
+    margin-right: 10px;
+}
+
+body[data-Body="Body"] header ul {
+    display: flex;
+    list-style: none;
+}
+
+body[data-Body="Body"] header ul li {
+    margin: 0 10px;
+}
+
+body[data-Body="Body"] header ul li a {
+    text-decoration: none;
+    color: #fff;
+}

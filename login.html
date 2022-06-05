@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta chareset="utf-8" />
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-amagd="Body">
+
+    <form id="form">
+        <div>
+            <label>البريد الاكتروني</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label>الرقم السري</label>
+            <input type="password" name="password">
+        </div>
+        <input type="button" id="button" value="تسجيل الدخول" />
+    </form>
+    <script>
+        let form = document.getElementById("form");
+        let button = document.getElementById("button");
+        button.onclick = () => {
+            if (form.children[0].children[1].value != "" && form.children[1].children[1].value != "") {
+                alert("Success | تم بنجاح")
+                let Input = [
+                    form.children[0].children[1].value,
+                    form.children[1].children[1].value,
+                ]
+                console.log(Input);
+            } else {
+                alert("please Enter All input | من فضلك املاء المدخلات")
+            }
+        }
+    </script>
+</body>
+
+</html>
